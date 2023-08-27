@@ -1,0 +1,29 @@
+name: deploy-workflow
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Show files
+        run: ls -l
+        
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build project
+        run: pnpm run --loglevel error build
