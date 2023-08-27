@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
@@ -13,17 +13,31 @@ jobs:
 
       - name: Show files
         run: ls -l
-        
-      - name: Install PNPM
-        uses: pnpm/action-setup@v2
 
       - name: Install node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+
       - name: Install dependencies
         run: pnpm install
 
       - name: Build project
-        run: pnpm run --loglevel error build
+        run: pnpm run build
+
+  delivery:
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Delivery through SCP
+        uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.4
+        with:
+          host: ${{ secrets.ENGUZ_HOST }}
+          port: 22222
+          user: ${{ secrets.ENGUZ_USER }}
+          pass: ${{ secrets.ENGUZ_PASS }}
+          scp: |
+            'dist/*' => /home/mati/matiasguzlopweb

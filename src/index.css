@@ -14,50 +14,50 @@ body {
 
 @font-face {
   font-family: NotoSans;
-  src: url("fonts/NotoSans/NotoSans-Regular.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-Regular.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
   font-style: italic;
-  src: url("fonts/NotoSans/NotoSans-Italic.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-Italic.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: bold;
-  src: url("fonts/NotoSans/NotoSans-Bold.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-Bold.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: bold;
   font-style: italic;
-  src: url("fonts/NotoSans/NotoSans-BoldItalic.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-BoldItalic.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: bolder;
-  src: url("fonts/NotoSans/NotoSans-Black.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-Black.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: bolder;
   font-style: italic;
-  src: url("fonts/NotoSans/NotoSans-BlackItalic.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-BlackItalic.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: lighter;
-  src: url("fonts/NotoSans/NotoSans-Light.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-Light.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: lighter;
   font-style: italic;
-  src: url("fonts/NotoSans/NotoSans-LightItalic.ttf");
+  src: url("/public/fonts/NotoSans/NotoSans-LightItalic.ttf");
 }
