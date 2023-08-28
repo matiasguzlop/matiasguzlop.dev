@@ -12,7 +12,7 @@ export const Container = styled.header`
     align-items: center;
     box-shadow: 0px 0px 20px -10px ${props => props.theme.backgroundColor.secondary};
     position: fixed;
-    background-color: none;
+    background-color: rgba(0,0,0,0.3);
     z-index: 1;
     backdrop-filter: blur(8px);
 `;
