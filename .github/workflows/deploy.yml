@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 jobs:
-  build:
+  build_and_deploy:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
@@ -41,12 +41,12 @@ jobs:
       - name: Start process on production server
         uses: cross-the-world/ssh-pipeline@master
         with:
-          host: ${{ secrets.DC_HOST }}
+          host: ${{ secrets.ENGUZ_HOST }}
           port: 22222
-          user: ${{ secrets.DC_USER }}
-          pass: ${{ secrets.DC_PASS }}
+          user: ${{ secrets.ENGUZ_USER }}
+          pass: ${{ secrets.ENGUZ_PASS }}
           connect_timeout: 10s
           script: |
             cd /home/mati/matiasguzlopweb &&
-            NODE_ENV=production pm2 start "serve -s -l 3004 dist" --name matiasguzlop.dev --restart-delay 0 &&
+            NODE_ENV=production pm2 start "serve -s -l 3004 ." --name matiasguzlop.dev --restart-delay 0 &&
             pm2 save
