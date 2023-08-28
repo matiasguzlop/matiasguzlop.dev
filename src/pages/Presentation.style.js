@@ -72,7 +72,7 @@ export const SubTitle = styled.h2`
     font-size: 1rem;
   }
   @media ${sizeQueries.xsm}{
-    font-size: 1rem;
+    font-size: .9rem;
   }
 `;
 

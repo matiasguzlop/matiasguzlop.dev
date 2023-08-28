@@ -8,7 +8,7 @@ function Presentation ({ refPassed, handleScrollToSection }) {
               <Img src='img/profile3.png'></Img>
               <PreTitle>Hi, my name is</PreTitle>
               <Title>Matías Guzmán</Title>
-              <SubTitle>I'm a software engineer</SubTitle>
+              <SubTitle>I'm a Full Stack Developer</SubTitle>
           </TitleContainer>
           <DropContainer>
               <Drop>
@@ -16,7 +16,7 @@ function Presentation ({ refPassed, handleScrollToSection }) {
                       5 years of experience working in teams and as a freelancer.
                   </li>
                   <li>
-                      Commitment to good programming practices and clear communication with the team.
+                      Committed to good programming practices and clear communication with the team.
                   </li>
                   <li>
                       I love working with TDD.
