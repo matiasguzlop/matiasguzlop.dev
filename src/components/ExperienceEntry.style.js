@@ -7,10 +7,10 @@ export const Container = styled.section`
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1em auto;
   width: 70ch;
-  height: 360px;
+  height: 340px;
   border: 1px solid ${props => props.theme.color.primary};
   border-radius: 20px;
-  padding:1em;
+  padding: 1em;
   margin-top: 2em;
   @media ${sizeQueries.sm}{
     height: auto;
@@ -21,7 +21,7 @@ export const Container = styled.section`
 `;
 
 export const LogoContainer = styled.div`
-  margin: 0 auto 0 auto;
+  margin: 1em auto 0 auto;
   img{
     width: 100%;
     height: auto;
@@ -30,7 +30,7 @@ export const LogoContainer = styled.div`
 
 export const LogoInnerContainer = styled.div`
   width: 200px;
-  height: 100px;
+  height: 80px;
   display:flex;
   align-items: center;
 `;
@@ -43,6 +43,7 @@ export const Header = styled.header`
 
 export const Company = styled.h1`
   font-size: 1.2em;
+  margin: 0;
 `;
 
 export const Location = styled.span`
@@ -53,10 +54,10 @@ export const Location = styled.span`
 `;
 
 export const Charge = styled.span`
-    color: ${props => props.theme.color.tertiary};
-    font-size: 1.2em;
-    font-weight: lighter;
-    font-style: italic;
+  color: ${props => props.theme.color.tertiary};
+  font-size: 1.2em;
+  font-weight: lighter;
+  font-style: italic;
 `;
 
 export const Period = styled.span`
@@ -65,14 +66,14 @@ export const Period = styled.span`
   color: ${props => props.theme.color.tertiary};
   opacity: 0.6;
   font-size: 0.9em;
-  `;
+`;
 
 export const Body = styled.main`
   color: ${props => props.theme.color.tertiary};
   font-weight: normal;
   margin-top: 1em;
   margin-bottom: 1em;
-  `;
+`;
 
 export const Techs = styled.span`
   color: ${props => props.theme.color.tertiary};
