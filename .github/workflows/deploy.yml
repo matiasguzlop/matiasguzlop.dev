@@ -48,5 +48,6 @@ jobs:
           connect_timeout: 10s
           script: |
             cd /home/mati/matiasguzlopweb &&
-            NODE_ENV=production pm2 start "serve -s -l 3004 ." --name matiasguzlop.dev --restart-delay 0 &&
+            NODE_ENV=production pm2 delete matiasguzlop.dev 2>/dev/null || true &&
+            pm2 start "serve -s -l 3004 ." --name matiasguzlop.dev &&
             pm2 save
