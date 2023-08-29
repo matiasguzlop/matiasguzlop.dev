@@ -1,3 +1,8 @@
+:root{
+  --bottom-nav-background-color: #14141e;
+  --bottom-nav-background-color: #78b4ff;
+}
+
 body {
   margin: 0;
   font-family: NotoSans, sans-serif;
