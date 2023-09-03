@@ -5,7 +5,7 @@ import { sizeQueries } from '../styles/constants.js';
 export const Container = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1em auto;
+  grid-template-rows: auto 1em auto;
   width: 70ch;
   height: 340px;
   border: 1px solid ${props => props.theme.color.primary};

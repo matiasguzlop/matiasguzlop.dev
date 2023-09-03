@@ -21,9 +21,6 @@ function ExperienceEntry ({ experience }) {
                   {experience.charge}
               </Charge>
           </Header>
-          <Period>
-              {experience.period}
-          </Period>
           <Body>
               {experience.body}
           </Body>
