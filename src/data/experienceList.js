@@ -6,7 +6,7 @@ export default [
     location: '',
     charge: 'Backend Developer',
     period: 'April 2023 - Present',
-    body: 'API Rest development, new features with high value to clients of the electric energy field. Documentation building, legacy code refactoring and CI/CD pipelines maintenance.',
+    body: ' API Rest development, new features with high value to clients of the electric energy field. I built documentation, refactor legacy code, CI/CD pipelines maintenance, design new products data models, etc.',
     techs: 'Django, Python, Linux, PostgreSQL, Celery, GitLab CI/CD.'
   }, {
     logoUrl: 'img/tide_logo.png',
