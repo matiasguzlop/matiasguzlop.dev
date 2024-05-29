@@ -1,14 +1,12 @@
-import { Body, Charge, Company, Container, Header, Location, LogoContainer, LogoInnerContainer, Period, Techs } from './ExperienceEntry.style.js';
+import { Body, Charge, Company, Container, Header, Location, LogoContainer, Period, Techs } from './ExperienceEntry.style.js';
 
 function ExperienceEntry ({ experience }) {
   return (
       <Container>
           <LogoContainer>
-              <LogoInnerContainer>
                   <a href={experience.companyUrl}>
                       <img src={experience.logoUrl}/>
                   </a>
-              </LogoInnerContainer>
           </LogoContainer>
           <Header>
               <Company>

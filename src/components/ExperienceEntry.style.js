@@ -5,9 +5,9 @@ import { sizeQueries } from '../styles/constants.js';
 export const Container = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1em auto;
+  grid-template-rows: auto 4em auto auto;
   width: 70ch;
-  height: 340px;
+  height: 450px;
   border: 1px solid ${props => props.theme.color.primary};
   border-radius: 20px;
   padding: 1em;
@@ -21,29 +21,27 @@ export const Container = styled.section`
 `;
 
 export const LogoContainer = styled.div`
-  margin: 1em auto 0 auto;
+  margin: 2em auto 2em auto;
+  display: flex;
+  align-items: center;
   img{
-    width: 100%;
-    height: auto;
+    width: 300px;
+    /* max-width: 300px; */
+    max-height: 150px;
   }
 `;
 
-export const LogoInnerContainer = styled.div`
-  width: 200px;
-  height: 80px;
-  display:flex;
-  align-items: center;
-`;
 
 export const Header = styled.header`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1ch;
-`;
+  `;
 
 export const Company = styled.h1`
   font-size: 1.2em;
   margin: 0;
+  width: 100%;
 `;
 
 export const Location = styled.span`

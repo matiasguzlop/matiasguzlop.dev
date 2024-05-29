@@ -11,7 +11,7 @@ function Projects ({ refPassed, handleScrollToSection }) {
               {projectsList.map(project => <ProjectEntry key={project.title} project={project}/>)}
           </ProjectsContainer>
           <ImportantLink
-            href='https://drive.google.com/drive/folders/1N52IdQpJ5nGJo97OrTe_oQygCoLkthgs?usp=sharing'
+            href='https://drive.google.com/file/d/1JLzMg2qCVC9UhDFPPM_vNqq5SEobPjBO/view?usp=sharing'
             target='_blank'
             rel='noreferrer'
           >Checkout my PDF resume ⬇️</ImportantLink>
