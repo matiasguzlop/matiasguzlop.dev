@@ -5,7 +5,7 @@ on:
     tags:
       - '*'
 env:
-  APP_NAME: "matiasguzlop.dev"
+  APP_NAME: "matiasguzlop-dev"
 
 jobs:
   build:

@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: matiasguzlop.dev
+  name: matiasguzlop-dev
 spec:
   selector:
     matchLabels:
-      app: matiasguzlop.dev
+      app: matiasguzlop-dev
   template:
     metadata:
       labels:
-        app: matiasguzlop.dev
+        app: matiasguzlop-dev
     spec:
       containers:
-        - name: matiasguzlop.dev
+        - name: matiasguzlop-dev
           image: ghcr.io/matiasguzlop/matiasguzlop.dev:latest
           resources:
             requests:
