@@ -1,0 +1,8 @@
+.gitignore
+eslint.config.js
+README.md
+node_modules/
+dist
+.github
+.vscode
+k8s/

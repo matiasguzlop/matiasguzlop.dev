@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: matiasguzlop.dev
+spec:
+  selector:
+    matchLabels:
+      app: matiasguzlop.dev
+  template:
+    metadata:
+      labels:
+        app: matiasguzlop.dev
+    spec:
+      containers:
+        - name: matiasguzlop.dev
+          image: ghcr.io/matiasguzlop/matiasguzlop.dev:latest
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "200m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+      - name: docker-registry-credentials
+      
