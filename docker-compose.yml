@@ -1,0 +1,6 @@
+services:
+  matiasguzlop:
+    image: ghcr.io/matiasguzlop/matiasguzlop.dev:latest
+    restart: unless-stopped
+    ports: 
+      - "8001:80"
