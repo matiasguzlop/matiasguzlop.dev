@@ -13,7 +13,7 @@ function Presentation({ refPassed, handleScrollToSection }) {
             <DropContainer>
                 <Drop>
                     <p>
-                        <strong>6 years</strong> of experience.
+                        <strong>7 years</strong> of experience.
                     </p>
                     <p>
                         My most valuable skill is my <strong>commitment to good programming practices</strong> and clear <strong>communication with the team</strong>.
