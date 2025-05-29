@@ -55,4 +55,4 @@ jobs:
           script: |
             echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u matiasguzlop --password-stdin
             cd /home/${{ secrets.VPS_SSH_USER }}/matiasguzlop.dev
-            docker compose up -d --force-recreate
+            docker compose up -d --force-recreate --pull always
