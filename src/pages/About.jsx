@@ -13,7 +13,7 @@ function About({ refPassed, handleScrollToSection }) {
                     <div>⚙️</div>Started as a freelancer building data monitoring systems for industrial companies, managing Linux servers, and creating UIs using jQuery, PHP, and MySQL.
                 </li>
                 <li>
-                    <div>👨‍💻</div>Dove deeper into software development, learning techniques like 💚 TDD and frameworks such as React, Express, NestJS, and Django.
+                    <div>👨‍💻</div>Delved into software development, learning frameworks, cloud, and a lot of things.
                 </li>
                 <li>
                     <div>🚀</div>Joined great companies and collaborated with talented teams.
@@ -28,10 +28,10 @@ function About({ refPassed, handleScrollToSection }) {
             </List>
             <TechsBox>
                 <h3>Technologies I've been working with recently:</h3>
-                <li>Django</li>
-                <li>React</li>
                 <li>Typescript</li>
+                <li>Django</li>
                 <li>Express</li>
+                <li>PostgreSQL</li>
                 <li>MongoDB</li>
                 <li>Docker</li>
             </TechsBox>

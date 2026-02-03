@@ -1,13 +1,13 @@
 export default [
   {
     logoUrl: 'img/logo-minecon.svg',
-    company: 'Chilean Ministry of Economy, Development and Tourism',
+    company: 'Ministerio de Economía',
     companyUrl: 'https://www.super.gob.cl/',
     location: '',
-    charge: 'Full Stack Developer',
+    charge: 'Software Engineer',
     period: 'November 2023 - Present',
-    body: 'Development and maintenance of “Unified Permits System” and its interoperability API: CI/CD pipeline refactors, code reviews, user interfaces, report generation, design and implementation of microservices architecture.',
-    techs: 'Typescript, Django, PostgreSQL, Vue, AWS, Jenkins, Docker.'
+    body: 'Development and maintenance of “Sistema Unificado de Permisos” and its interoperability API: CI/CD pipeline refactors, code reviews, user interfaces, report generation, design and implementation of microservices architecture.',
+    techs: 'Typescript, Django, PostgreSQL, Vue, AWS, GitLab CI, Jenkins, Docker.'
   },
   , {
     logoUrl: 'img/enguz_logo.png',
@@ -26,7 +26,7 @@ export default [
     location: '',
     charge: 'Backend Developer',
     period: 'April 2023 - October 2023',
-    body: 'API Rest maintenance, new features with high value to clients of the electric energy field. Legacy code refactorization, CI/CD pipelines maintenance, design and implement data models for new products.',
+    body: 'API Rest maintenance, new features with high value to clients of the electric energy sector. Legacy code refactorization, CI/CD pipelines maintenance, design and implement data models for new products.',
     techs: 'Django, Python, Linux, PostgreSQL, Celery, GitLab CI/CD.'
   }, {
     logoUrl: 'img/tide_logo.png',

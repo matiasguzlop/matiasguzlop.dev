@@ -8,12 +8,12 @@ function Presentation({ refPassed, handleScrollToSection }) {
                 <Img src='img/profile3.png'></Img>
                 <PreTitle>Hi, my name is</PreTitle>
                 <Title>Matias Guzman</Title>
-                <SubTitle>I'm a Full Stack Developer</SubTitle>
+                <SubTitle>Software Engineer</SubTitle>
             </TitleContainer>
             <DropContainer>
                 <Drop>
                     <p>
-                        <strong>7 years</strong> of experience.
+                        <strong>+7 years</strong> of experience.
                     </p>
                     <p>
                         My most valuable skill is my <strong>commitment to good programming practices</strong> and clear <strong>communication with the team</strong>.
@@ -22,7 +22,7 @@ function Presentation({ refPassed, handleScrollToSection }) {
                         What drives me is the process of <strong>creating solutions</strong>, which is why I am not tied to any specific programming language.
                     </p>
                     <p>
-                        Sportsman, sociable and <strong>team worker</strong>.
+                        Sportsman, sociable and team worker.
                     </p>
                 </Drop>
             </DropContainer>

@@ -9,14 +9,12 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Experience from './pages/Experience.jsx';
 import Presentation from './pages/Presentation';
-import Projects from './pages/Projects.jsx';
 import darkTheme from './styles/darkTheme';
 
 function App () {
   const toGoElementsRefs = {
     matias: useRef(),
     experience: useRef(),
-    projects: useRef(),
     about: useRef(),
     contact: useRef()
   };
@@ -43,10 +41,6 @@ function App () {
               <Experience
                 handleScrollToSection={handleScrollToSection}
                 refPassed={toGoElementsRefs.experience}
-              />
-              <Projects
-                handleScrollToSection={handleScrollToSection}
-                refPassed={toGoElementsRefs.projects}
               />
               <About
                 handleScrollToSection={handleScrollToSection}

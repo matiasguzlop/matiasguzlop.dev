@@ -23,19 +23,13 @@ function Header ({ handleScrollToSection }) {
                   handleScrollToSection('matias');
                   handleClickMenuIcon();
                 }}
-              >Matías Guzmán</li>
+              >Matias Guzman</li>
               <li
                 onClick={() => {
                   handleScrollToSection('experience');
                   handleClickMenuIcon();
                 }}
               >Experience</li>
-              <li
-                onClick={() => {
-                  handleScrollToSection('projects');
-                  handleClickMenuIcon();
-                }}
-              >Projects</li>
               <li
                 onClick={() => {
                   handleScrollToSection('about');
