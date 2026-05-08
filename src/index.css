@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: NotoSans, sans-serif;
-  -webkit-font-smoolightg: antialiased;
-  -moz-osx-font-smoolightg: grayscale;
+  -webkit-font-smoothing: antialiased;
+
   z-index: -2;
   position: relative;
 }
@@ -14,21 +14,24 @@ body {
 
 @font-face {
   font-family: NotoSans;
-  src: url("/fonts/NotoSans/NotoSans-Regular.ttf");
+  src: url("/fonts/NotoSans/NotoSans-Regular.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: NotoSans;
   font-style: italic;
-  src: url("/fonts/NotoSans/NotoSans-Italic.ttf");
+  src: url("/fonts/NotoSans/NotoSans-Italic.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-Italic.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: bold;
-  src: url("/fonts/NotoSans/NotoSans-Bold.ttf");
+  src: url("/fonts/NotoSans/NotoSans-Bold.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-Bold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -36,14 +39,16 @@ body {
   font-family: NotoSans;
   font-weight: bold;
   font-style: italic;
-  src: url("/fonts/NotoSans/NotoSans-BoldItalic.ttf");
+  src: url("/fonts/NotoSans/NotoSans-BoldItalic.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-BoldItalic.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: bolder;
-  src: url("/fonts/NotoSans/NotoSans-Black.ttf");
+  src: url("/fonts/NotoSans/NotoSans-Black.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-Black.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -51,14 +56,16 @@ body {
   font-family: NotoSans;
   font-weight: bolder;
   font-style: italic;
-  src: url("/fonts/NotoSans/NotoSans-BlackItalic.ttf");
+  src: url("/fonts/NotoSans/NotoSans-BlackItalic.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-BlackItalic.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: NotoSans;
   font-weight: lighter;
-  src: url("/fonts/NotoSans/NotoSans-Light.ttf");
+  src: url("/fonts/NotoSans/NotoSans-Light.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-Light.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -66,6 +73,7 @@ body {
   font-family: NotoSans;
   font-weight: lighter;
   font-style: italic;
-  src: url("/fonts/NotoSans/NotoSans-LightItalic.ttf");
+  src: url("/fonts/NotoSans/NotoSans-LightItalic.woff2") format("woff2"),
+       url("/fonts/NotoSans/NotoSans-LightItalic.ttf") format("truetype");
   font-display: swap;
 }
