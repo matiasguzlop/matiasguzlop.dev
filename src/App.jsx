@@ -1,15 +1,20 @@
-import React, { useRef } from 'react';
+import React, { Suspense, lazy, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { Container } from './App.styles.js';
 import AnimatedBg from './components/AnimatedBg/AnimatedBg';
 import Footer from './components/Footer.jsx';
 import Header from './components/Header';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Experience from './pages/Experience.jsx';
 import Presentation from './pages/Presentation';
 import darkTheme from './styles/darkTheme';
+
+const Experience = lazy(() => import('./pages/Experience.jsx'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
+
+function SectionFallback () {
+  return <div style={{ minHeight: '100vh' }} />;
+}
 
 function App () {
   const toGoElementsRefs = {
@@ -38,15 +43,21 @@ function App () {
                 handleScrollToSection={handleScrollToSection}
                 refPassed={toGoElementsRefs.matias}
               />
-              <Experience
-                handleScrollToSection={handleScrollToSection}
-                refPassed={toGoElementsRefs.experience}
-              />
-              <About
-                handleScrollToSection={handleScrollToSection}
-                refPassed={toGoElementsRefs.about}
-              />
-              <Contact refPassed={toGoElementsRefs.contact} />
+              <Suspense fallback={<SectionFallback />}>
+                <Experience
+                  handleScrollToSection={handleScrollToSection}
+                  refPassed={toGoElementsRefs.experience}
+                />
+              </Suspense>
+              <Suspense fallback={<SectionFallback />}>
+                <About
+                  handleScrollToSection={handleScrollToSection}
+                  refPassed={toGoElementsRefs.about}
+                />
+              </Suspense>
+              <Suspense fallback={<SectionFallback />}>
+                <Contact refPassed={toGoElementsRefs.contact} />
+              </Suspense>
               <Footer/>
           </Container>
       </ThemeProvider>

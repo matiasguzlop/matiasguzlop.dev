@@ -5,7 +5,10 @@ function Presentation({ refPassed, handleScrollToSection }) {
     return (
         <Container ref={refPassed}>
             <TitleContainer>
-                <Img src='img/profile3.png'></Img>
+                <picture>
+                    <source srcSet='img/profile3.webp' type='image/webp' />
+                    <Img src='img/profile3.png' alt='Matias Guzman'></Img>
+                </picture>
                 <PreTitle>Hi, my name is</PreTitle>
                 <Title>Matias Guzman</Title>
                 <SubTitle>Software Engineer</SubTitle>
