@@ -10,6 +10,8 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   align-content: center;
+  content-visibility: auto;
+  contain-intrinsic-size: 100vh;
   @media ${sizeQueries.sm}{
     padding: ${headerHeight} 1em 0 1em;
   }

@@ -9,6 +9,8 @@ export const Container = styled.section`
   justify-content: center;
   align-content: center;
   padding-top: ${headerHeight};
+  content-visibility: auto;
+  contain-intrinsic-size: 100vh;
 `;
 
 export const Title = styled.h1`
