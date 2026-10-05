@@ -6,27 +6,23 @@ function Presentation({ refPassed, handleScrollToSection }) {
         <Container ref={refPassed}>
             <TitleContainer>
                 <picture>
-                    <source srcSet='img/profile3.webp' type='image/webp' />
-                    <Img src='img/profile3.png' alt='Matias Guzman'></Img>
+                    <source srcSet='img/profile1.jpg' type='image/jpg' />
+                    <Img src='img/profile1.jpg' alt='Matias Guzman'></Img>
                 </picture>
                 <PreTitle>Hi, my name is</PreTitle>
                 <Title>Matias Guzman</Title>
-                <SubTitle>Software Engineer</SubTitle>
+                <SubTitle>Infrastructure / Site Reliability Engineer</SubTitle>
             </TitleContainer>
             <DropContainer>
                 <Drop>
-                    <p>
-                        <strong>+7 years</strong> of experience.
-                    </p>
-                    <p>
-                        My most valuable skill is my <strong>commitment to good programming practices</strong> and clear <strong>communication with the team</strong>.
-                    </p>
-                    <p>
-                        What drives me is the process of <strong>creating solutions</strong>, which is why I am not tied to any specific programming language.
-                    </p>
-                    <p>
-                        Sportsman, sociable and team worker.
-                    </p>
+                  <p>
+                    Over 8 years across startups and government organizations, I've worked on infrastructure, DevOps,
+                    CI/CD, reliability, and technical leadership.<br/>
+
+                    I believe maintainability, clear communication, and ownership are more important than quick wins.<br/>
+                    Good systems are not only built to work today, but to remain understandable and reliable as they
+                    evolve.
+                  </p>
                 </Drop>
             </DropContainer>
             <GoDownButton
