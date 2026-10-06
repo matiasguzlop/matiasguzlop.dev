@@ -12,7 +12,7 @@ function Experience ({ refPassed, handleScrollToSection }) {
               {experienceList.map(experience => <ExperienceEntry key={experience.company} experience={experience}/>)}
           </ExperienceContainer>
           <ImportantLink
-                      href='https://drive.google.com/file/d/1vILubQDlYZPYdxp6mnP7qyM50wfyWDFF/view?usp=sharing'
+                      href='https://drive.google.com/file/d/1-Ycg5jki5RmsymSD2FCro1xYfrrQSIx1/view?usp=sharing'
                       target='_blank'
                       rel='noreferrer'
           >
